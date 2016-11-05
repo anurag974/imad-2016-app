@@ -79,7 +79,6 @@ var htmlTemp=`
      </div>
     </div>
 </html>
-
 `;
 return htmlTemp;
 }
