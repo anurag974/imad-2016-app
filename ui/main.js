@@ -30,8 +30,7 @@ button.onclick=function()
 
 //submit name
 
-var nameInput=document.getElementById('name');
-var name=nameInput.value;
+
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
   //create a request
@@ -58,6 +57,8 @@ submit.onclick=function(){
   };
   
   //make a request
+  var nameInput=document.getElementById('name');
+var name=nameInput.value;
   request.open('GET','http://anurag974.imad.hasura-app.io/submit-name?name='+name,true);
   request.send(null);
   
